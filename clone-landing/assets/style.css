@@ -1,0 +1,402 @@
+/***********************/
+/* LANDING PAGE STYLES */
+/***********************/
+
+
+/* COLORS */
+:root {
+	--lg-dark: rgba(0,0,0,.87);
+	--lg-light: rgba(0,0,0,.12);
+	--lg-green-light: #68c441;
+	--lg-green-light-2: #4c9f29;
+	--lg-green-medium: #71bf44;
+	--lg-green-medium-2: #6aaf3c;
+	--lg-green-header: #218477;
+	--lg-green-header-2: #1f7267;
+	--lg-green-footer: #22454d;
+	--lg-brown: #ce7029;
+	--lg-blue: #4086d8;
+	--lg-green: #046a38;
+	--lg-white: rgba(255,255,255,.87);
+	--lg-gray-light: #f3f7fb;
+}
+
+
+/* FONTS */
+:root {
+	--bs-body-font-family: 'Montserrat', sans-serif;
+	--bs-body-font-size: 16px;
+	--bs-body-color: var(--lg-dark);
+}
+.fw-medium {
+	font-weight: 500;
+}
+.fw-semibold {
+	font-weight: 600;
+}
+
+
+/* BUTTONS */
+[class*="btn-cta-"] {
+	min-width: 180px;
+	width: 240px;
+	padding: 12px 50px;
+	border: 1px solid var(--lg-light);
+	font-size: 14px;
+	line-height: 1.286;
+}
+.btn-cta-green {
+	background: var(--lg-green-light);
+}
+.btn.btn-cta-green:hover,
+.btn.btn-cta-green:focus {
+	background: var(--lg-green-light-2);
+}
+.btn.btn-cta-white:focus,
+.btn.btn-cta-white:hover {
+	background: var(--lg-white)!important;
+	color: var(--lg-dark)!important;
+}
+
+
+/* FADE-IN ANIMATION */
+.scrollfade-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+.scrollfade-visible {
+	opacity: 1;
+	pointer-events: all;
+}
+.scrollfade-animate {
+	transition: opacity 0.5s ease-in-out;
+}
+
+
+/* MAIN HERO */
+.main-hero {
+	background: no-repeat center/cover;
+	height: 43vw;
+	min-height: 650px;
+}
+.main-hero .container {
+	top: 21%;
+}
+.main-hero h1 {
+	font-size: 42px;
+}
+.main-hero p {
+	font-size: 18px;
+}
+
+
+/* FIRST UNIVERSITIES */
+.first-universities {
+	margin-top: -26vw;
+	max-width: 1110px;
+}
+[class*="universities"] [class*="col-"] {
+	max-width: 320px;
+	padding: 27px 20px 40px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-top: 6px solid;
+}
+[class*="universities"] [class*="col-"]:nth-child(1) {
+	border-color: var(--lg-brown);
+}
+[class*="universities"] [class*="col-"]:nth-child(2) {
+	border-color: var(--lg-blue);
+}
+[class*="universities"] [class*="col-"]:nth-child(3) {
+	border-color: var(--lg-green);
+}
+[class*="universities"] .logo-univ {
+	height: 60px;
+	padding: 0 12px;
+}
+[class*="universities"] .description {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* FIRST UNIVERSITIES RESPONSIVE STYLES */
+@media (max-width: 1520px) {
+	.first-universities {
+		margin-top: -370px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	[class*="universities"] [class*="col-"] {
+		max-width: 280px;
+	}
+}
+@media (max-width: 767px) {
+	.first-universities {
+		margin-top: -270px;
+	}
+}
+
+
+/* RECRUITMENT SUPPORT */
+.recruitment-support {
+	max-width: 1140px;
+}
+.recruitment-support .col-md-4 {
+	max-width: 335px;
+}
+.recruitment-support h3 {
+	max-width: 260px;
+	font-weight: 600;
+}
+.recruitment-support p {
+	font-size: 14px;
+	font-weight: 500;
+}
+.recruitment-support a {
+	color: var(--lg-green-medium);
+}
+.recruitment-support a:focus, 
+.recruitment-support a:hover {
+	color: var(--lg-green-medium-2);
+}
+
+
+/* TEFL ALUMNI */
+.tefl-alumni {
+	background: var(--lg-gray-light);
+}
+.logos-wrapper {
+	max-width: 1000px;
+}
+
+
+/* COURSES */
+@media (min-width: 1400px) {
+	.course-row .container {
+		max-width: 1140px;
+	}
+}
+.course-description ul {
+	max-width: 418px;
+}
+.course-description li {
+	margin-bottom: 30px;
+	font-weight: 500;
+	font-size: 14px;
+}
+.course-description i:before {
+	font-weight: 900!important;
+	font-size: 32px;
+	color: var(--lg-green-medium);
+}
+.course-description span {
+	width: calc(100% - 36px);
+}
+.course-description [class*="btn-cta-"] {
+	width: 180px;
+	padding: 12px 34px;
+}
+
+
+/* TESTIMONIAL */
+.lp-testimonial {
+	background: var(--lg-gray-light);
+}
+.open-quote {
+	top: -25px;
+	left: -38px;
+}
+.close-quote {
+	bottom: -25px;
+	right: -38px;
+}
+
+/* TESTIMONIAL RESPONSIVE STYLES */
+@media (min-width: 992px) {
+	.lp-testimonial .container {
+		max-width: 860px;
+	}
+}
+@media (max-width: 767px) {
+	.open-quote {
+		left: 0;
+	}
+	.close-quote {
+		right: 0;
+	}
+}
+
+/* LAST UNIVERSITIES */
+@media (min-width: 1400px) {
+	.last-universities .container {
+		max-width: 1140px;
+	}
+}
+
+
+/* FOOTER */
+footer {
+	background: var(--lg-green-footer);
+}
+@media (min-width: 1400px) {
+	footer .container {
+		max-width: 1140px;
+	}
+}
+footer .carousel {
+	max-width: 210px;
+}
+footer .carousel-control-prev,
+footer .carousel-control-next {
+	top: -40px;
+	height: 20px;
+	width: 20px;
+	display: block;
+	opacity: 1;
+}
+footer .carousel-control-prev {
+	left: auto;
+	right: 50px;
+}
+footer .carousel-control-next {
+	right: 10px;
+}
+footer [class*="carousel-control-"] span {
+	height: 20px;
+	width: 25px;
+}
+.copyright {
+	font-size: 10px;
+}
+@media (max-width: 575px) {
+	footer [class*="col-"] ul {
+		width: 250px;
+	}
+}
+
+
+/* MEGAMENU STYLES */
+@media (min-width: 1400px) {
+	nav .container {
+		max-width: 1140px;
+	}
+}
+.has-dropdown > span {
+	cursor: default;
+}
+.dropdown-content {
+	display: none;
+	z-index: 10;
+}
+.nav-item:hover > .dropdown-content {
+	display: block;
+}
+.nav-item  {
+	border-color: white!important;
+}
+.menu-lvl-1 > .nav-item:hover,
+.menu-lvl-1 > .nav-item.active,
+.has-dropdown:hover {
+	border-color: var(--lg-green-header)!important;
+}
+.has-dropdown:hover > .nav-link > i:before {
+	transform: scale(1, -1);
+}
+.btn-register {
+	font-size: 14px;
+	background: var(--lg-green-header);
+	box-shadow: 0 2px 4px 0 var(--lg-light)!important;
+}
+.btn-register:hover {
+	background: var(--lg-green-header-2);
+}
+.navbar-toggler-icon {
+	width: 20px;
+	height: 20px;
+}
+.menu-destinations > .dropdown-content {
+	background: linear-gradient(90deg, #fff 50%, #f4f8fd 50%);
+}
+.menu-job-openings > .dropdown-content {
+	background: linear-gradient(90deg, #fff calc(50% - 570px + 380px), #f4f8fd calc(50% - 570px + 380px));
+}
+.menu-lvl-2 > .has-dropdown > .dropdown-content {
+	color: rgba(0,0,0,.56);
+}
+.menu-lvl-2 > .has-dropdown > .dropdown-content .nav-link:hover {
+    color: var(--lg-dark);
+	font-weight: 600;
+}
+.btn-all-jobs {
+	min-width: 200px;
+	color: var(--lg-green-header);
+	border: 1px solid var(--lg-green-header);
+	background: #fff;
+}
+.btn-all-jobs:hover {
+	color: var(--lg-green-header-2);
+	border: 1px solid var(--lg-green-header-2);
+	background: #f5fdfb;
+}
+.catjobs-tab-link i:before {
+	font-weight: 900!important;
+}
+.catjobs-tab-link i {
+	display: none;
+	font-size: 12px;
+}
+.catjobs-tab-link.active i {
+	display: inline;
+}
+.catjobs-tab-content {
+	display: none;
+}
+.catjobs-tab-content.active {
+	display: block;
+}
+.catjobs-tab-content p {
+	max-width: 165px;
+	line-height: 1.714;
+	text-transform: none;
+}
+.catjobs-tab-content .btn-all-jobs,
+.catjobs-tab-content .btn-register {
+	min-width: 165px;
+}
+
+/* MEGAMENU RESPONSIVE STYLES */
+@media (max-width: 1199px) {
+	.menu-job-openings > .dropdown-content {
+		background: linear-gradient(90deg, #fff calc(50% - 480px + 320px), #f4f8fd calc(50% - 480px + 320px));
+	}
+	.menu-jobs > .dropdown-content > .container {
+		max-width: none;
+		padding: 0;
+	}
+}
+@media (max-width: 991px) {
+	.navbar-brand img {
+		width: 106px;
+	}
+	.account-btns > a {
+		font-size: 12px;
+	}
+	.menu-container {
+		height: calc(100vh - 55px);
+	}
+	.sub-menu {
+		height: 70vh;
+		overflow: auto;
+		z-index: -1;
+	}
+	.sub-menu.active {
+		z-index: 10;
+	}
+	.has-submenu i {
+		font-size: 12px;
+	}
+	.mobile-megamenu .nav-item > i:before {
+		font-weight: 900!important;
+	}
+}
